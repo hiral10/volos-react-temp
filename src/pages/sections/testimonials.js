@@ -13,8 +13,12 @@ return (
                   <h4 className="testimonials-title">{serv.name}</h4>
                   </div>
                   <div className="testimonials-text">
-                    
-                    {'"'+serv.review +'" '}</div>
+                  <span style={{fontSize:"50px",fontWeight:"bolder"}}>&#8220;</span>
+                    {serv.review }
+                    <span style={{fontSize:"50px",fontWeight:"bolder"}}>&#8221;</span>
+
+                    </div>
+
                 </div>
               ))}
             </div>

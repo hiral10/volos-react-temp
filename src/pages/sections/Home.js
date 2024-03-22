@@ -1,37 +1,8 @@
 // Data
 import homeData from '../../data/home.json';
-import {useEffect, useState} from 'react'
 // ---------------
 
 function Home({userdata}) {
-  const [name,setname] = useState({user:{about:[]}})
-  // const performAPICall =async()=>{
-  //   let response = {};
-  //     let errored = false;
-  
-  //     try {
-  //       response = await (
-  //         await fetch(`https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae`, {
-  //           method: "GET",
-  //         })
-  //       ).json();
-  //     } catch (e) {
-  //       errored = true;
-  //       return errored;
-  //     }
-  //    setname((prevState)=>({
-  //     ...prevState,
-  //     user:
-  //     {about:response.user.about}
-  //    }))
-  //     return name;
-  
-  // }
-  // useEffect(() => {
-  //   performAPICall();
-
-  // },[])
-
   return (
     <section id="home" className="section full-width-section">
       <div className="section-wrapper block">
