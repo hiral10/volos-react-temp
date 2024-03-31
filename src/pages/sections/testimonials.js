@@ -1,32 +1,32 @@
-const Testimonials=({userdata})=>{
-return (
+import React from 'react'
+import Carousel from 'react-grid-carousel'
+
+const Testimonials = ({ userdata }) => {
+  return (
     <section id="testimonials" className="section">
-    <div className="section-wrapper block">
-      <div className="" >
-        <div className="row">
-          <div className="">
-            <div className="testimonials-wrapper">
-            {userdata.map((serv, i) => (
-                <div key={'testimonials-' + i} className='testimonials-holder'>
-                  <div style={{display:'flex',flexDirection:'column',marginRight:"30px",width:"50%"}}>
-                  <img src={serv.image.url} alt={serv.name} />
-                  <h4 className="testimonials-title">{serv.name}</h4>
-                  </div>
-                  <div className="testimonials-text">
-                  <span style={{fontSize:"50px",fontWeight:"bolder"}}>&#8220;</span>
-                    {serv.review }
-                    <span style={{fontSize:"50px",fontWeight:"bolder"}}>&#8221;</span>
+      <div className='testimonials'>
+      <Carousel cols={2} rows={1} gap={10} loop autoplay={1000}>
+        {userdata.map((serv, i) => (
 
-                    </div>
-
-                </div>
-              ))}
+          <Carousel.Item key={'testimonials-' + i}>
+            <div className='testimonials-holder'>
+              <div style={{ display: 'flex', flexDirection: 'column', marginRight: "30px", width: "50%" }}>
+                <img src={serv.image.url} alt={serv.name} />
+                <h4 className="testimonials-title">{serv.name}</h4>
+              </div>
+              <div className="testimonials-text">
+                <span style={{ fontSize: "50px", fontWeight: "bolder" }}>&#8220;</span>
+                {serv.review}
+                <span style={{ fontSize: "50px", fontWeight: "bolder" }}>&#8221;</span>
+              </div>
             </div>
-          </div>
-        </div>
+          </Carousel.Item>
+
+        ))}
+
+      </Carousel>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
 }
 export default Testimonials

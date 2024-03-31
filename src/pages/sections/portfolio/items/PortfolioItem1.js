@@ -14,7 +14,7 @@ import "./portfolio-item.css"
 
 // -------------------
 
-function PortfolioItem1({image,title,description}) {
+function PortfolioItem1({image,title,description,liveurl,githuburl,techStack}) {
   return (
     <div className="portfolio-item-wrapper">
       <div className="portfolio-content">
@@ -37,6 +37,12 @@ function PortfolioItem1({image,title,description}) {
                   <img src={image} alt="portfolio item 1" />
                 </SwiperSlide>
               </Swiper>
+              <div className="skill-used">
+              {techStack.map((item, index) => (
+                <div className="skill-set" key={index}>{item}</div>
+              ))}
+
+            </div>
             </div>
           </div>
 
@@ -45,13 +51,15 @@ function PortfolioItem1({image,title,description}) {
 
             <p className="section-info">
             </p>
-
+            
             <p>
             {description}
             </p>
 
-            <p>
-              <a className="button">Check Project</a>
+            <p style={{display:'flex',flexDirection:'column',margin:'auto',width:'fit-content'}}>
+              <a style={{margin:'5px'}} className="button" href={liveurl} target="_blank">View Project</a>
+              <a style={{margin:'5px'}} className="button" href={githuburl} target="_blank">View Code &lt;&#47; &gt;</a>
+
             </p>
           </div>
         </div>

@@ -514,7 +514,7 @@ img.my-info-signature {
 
 .full-width-section .section-wrapper {
   padding: 0 0 0 5%;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   display: flex;
   display: -webkit-flex;
@@ -571,6 +571,7 @@ h1.entry-title {
 .social-links {
   margin-top: 10vh;
   margin-bottom: -5px;
+  display: flex;
 }
 
 .social-links a {
@@ -593,18 +594,22 @@ h1.entry-title {
   display: -webkit-flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+  justify-content: space-evenly;
+
 }
 
 .service-holder {
   padding: 36px;
   background-color: #362a2e;
-  width: 47%;
-  /* width:30%; */
+  /* width: 47%; */
+  width:30%;
 
   margin-right: 6px;
   margin-bottom: 6%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .service-holder img {
@@ -623,9 +628,18 @@ h1.entry-title {
   color: #f37b83;
   font-weight: 700;
 }
+.service-price{
+  display: flex;
+  padding: 10px;
+  font-weight: 300;
+  font-size: larger;
+  font-style: italic;
+  color: #f37b83;
+  justify-content: space-between;
+}
 
 .button-group-wrapper {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .button-group-wrapper > a {
@@ -649,14 +663,20 @@ h1.entry-title {
 }
 
 .testimonials-holder {
-  padding: 36px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
   background-color: #362a2e;
-  width: 47%;
+  /* width: 47%; */
   /* width:50%; */
-  margin-right: 6px;
-  margin-bottom: 6%;
+  /* margin-right: 6px; */
+  margin: 6%;
   display: flex;
   align-items: center;
+  height: 100%;
+  border-radius: 1% 20% 1% 20%;
 }
 
 .testimonials-holder img {
@@ -678,7 +698,6 @@ h1.entry-title {
     font-weight: 400;
     /* font-style: italic; */
 }
-
 /* ===================================
     7. Portfolio Section CSS
 ====================================== */

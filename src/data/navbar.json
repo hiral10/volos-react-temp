@@ -8,7 +8,10 @@
       "to": "service",
       "text": "Service"
     },
-
+    {
+      "to": "skills",
+      "text": "Skills"
+    },
     {
       "to": "portfolio",
       "text": "Portfolio"
@@ -17,10 +20,7 @@
       "to": "resume",
       "text": "Resume"
     },
-    {
-      "to": "skills",
-      "text": "Skills"
-    },
+   
     {
       "to":"testimonials",
       "text":"Testimonials"

@@ -13,8 +13,16 @@ function Home({userdata}) {
 
           <div className="social-links">
             {userdata.social_handles.map((link, i) => (
-              <a key={'social-link-' + i} href={link.url}>
+                            <a key={'social-link-' + i} href={link.url} target='_blank'>
+
+              <div style={{display:'flex',flexDirection:"column",alignItems:'center',padding:"10px"}}>
+                <div>
+              <img src={link.image.url} style={{height:'30px', width:'30px'}}></img>
+              </div>
+              <div>
                 {link.platform}
+              </div>
+              </div>
               </a>
             ))}
           </div>

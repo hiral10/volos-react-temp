@@ -205,7 +205,7 @@ function Portfolio({userdata}) {
                                 {item.title}
                               </p>
                               <p className="portfolio-cat">
-                                {item.description}
+                            
                               </p>
                             </div>
                           </div>
@@ -231,7 +231,7 @@ function Portfolio({userdata}) {
                 <div key={i}>
                   {item._id===portfolioItem &&
                   <div>
-                  <PortfolioItem1 image={item.image.url} title={item.title} description={item.description}/>
+                  <PortfolioItem1 image={item.image.url} title={item.title} description={item.description} liveurl={item.liveurl} githuburl={item.githuburl} techStack={item.techStack}/>
 
                     </div>
                   }

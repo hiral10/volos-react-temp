@@ -66,11 +66,13 @@ function Home() {
             <>
             <HomeSection userdata={userdata.user} />
             <Service userdata={userdata.user.services}/>
+            <Skills userdata={userdata.user.skills}/>
+
             <Portfolio userdata={userdata.user.projects} />
             <Resume userdata={userdata.user.timeline}/>
-            <Skills userdata={userdata.user.skills}/>
             <Testimonials userdata={userdata.user.testimonials}/>
-            <Contact />
+            {/* <Test userdata={userdata.user.testimonials}/> */}
+            <Contact userdata={userdata.user}/>
             </>
           }
           </div>

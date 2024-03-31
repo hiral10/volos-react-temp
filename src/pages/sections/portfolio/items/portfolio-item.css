@@ -82,3 +82,21 @@ p.block-right {
 p.block-right iframe {
   aspect-ratio: 16 / 9;
 }
+.skill-used {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 30px; */
+}
+
+.skill-set {
+  background-color: #362a2e;
+  color: #f37b83;
+  margin: 5px;
+  padding: 9px;
+  border-radius: 10px 10px;
+  font-size: 13px;
+  border: 1px solid #f37b83;
+  width: fit-content;
+  text-align: center;
+}

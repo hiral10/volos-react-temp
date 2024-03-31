@@ -16,7 +16,7 @@ const initialFormData = {
 };
 
 // to handle sending form message
-function Contact() {
+function Contact({userdata}) {
   const [formData, setFormData] = useState(initialFormData);
   const [serverState, setServerState] = useState({
     submitting: false,
@@ -87,11 +87,12 @@ function Contact() {
                 <p key={'contact-parg-' + i}>{parg}</p>
               ))}
               <p>
-                {contactData.contactInfo.map((info, i) => (
-                  <Fragment key={'contact-info-' + i}>
-                    <b>{info.title}</b> {info.value} <br />
+                  <Fragment key={'contact-info-' }>
+                    <b>ADDRESS </b> {userdata.about.address} <br />
+                    <b>EMAIL </b> {userdata.email} <br />
+                    <b>CONTACT NUMBER </b> {userdata.about.phoneNumber} <br />
                   </Fragment>
-                ))}
+                
               </p>
             </div>
 

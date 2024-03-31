@@ -183,6 +183,10 @@ sub {
   width: 40%;
   margin-right: 5%;
 }
+.width-50 {
+  width: 50%;
+  margin-right: 0%;
+}
 
 .width-55 {
   width: 55%;
